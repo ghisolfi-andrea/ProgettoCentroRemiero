@@ -3,7 +3,7 @@ body {
   }
   
   header {
-    background-color: #96efff;
+    background-color: #96ffed;
     padding: 20px;
     text-align: center;
   }
@@ -47,5 +47,21 @@ body {
   li{
     font-family: Verdana, Geneva, Tahoma, sans-serif
   }
-  
+
+  center{
+    background-color: rgba(116, 222, 248, 0.87);
+  }
  
+  textarea{
+    background-color:  rgba(116, 222, 248, 0.87);
+  }
+  input{
+    background-color:  rgba(116, 222, 248, 0.87);
+  }
+
+  div{
+    display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  width:50%;
+  }
