@@ -3,11 +3,11 @@ body {
   }
 
 footer{
-  background-color:rgb(103, 248, 224);
+  background-color:rgb(103, 214, 248);
   padding:20px;
   text-align:center;
   
-  
+ 
 }
   .container {
     display: flex;
@@ -20,7 +20,7 @@ footer{
   }
   
   header {
-    background-color: #96ffed;
+    background-color: #4db8ff;
     padding: 20px;
     text-align: center;
   }
