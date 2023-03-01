@@ -3,6 +3,9 @@
   <head>
     <title>Centro Remiero</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <header>
@@ -11,44 +14,80 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Cosa Offriamo </a></li>
-          <li><a href="#">Contatti</a></li>
+          <li><a href="Contatti.html">Contatti</a></li>
           <li><a href="#">Dove Siamo</a></li>
           <li><a href="#">Storia</a></li>
         </ul>
       </nav>
     </header>
-  
+  <main> 
         <h2>Benvenuti al Centro Remiero</h2>
           <p> Il nostro centro  offre ai propri soci gli strumenti e il luogo per vivere il lago, praticando sport a livello agonistico e amatoriale o rilassandosi davanti a un tramonto e a un aperitivo, respirandone l’aria e gustando il profumo di un pezzo di storia della città.</p>
           
-          <div>
+          <div id="foto">
+        
              <img src="https://www.canottierilario.it/wp-content/uploads/2020/07/BPP_5886-uai-799x799.jpg">
              <img src="https://www.canottierilario.it/wp-content/uploads/2020/07/BPP_6082-uai-1200x1200.jpg">
              <img src="https://www.canottierilario.it/wp-content/uploads/2020/07/BPP_6047-uai-1200x1200.jpg">
           </div>
-
-          <h2> Storia</h2>
+        
+        
           <p> </p>
           <h2> Sede</h2>
-          <p> La sede attuale della Canottieri Lario è un gioiello dell’architettura razionalista, datata 1931. Ora come allora è un edifico bianco, semplice ,
+
+          <p > La sede attuale della Canottieri Lario è un gioiello dell’architettura razionalista, datata 1931. Ora come allora è un edifico bianco, semplice ,
              che trasmette immagine di forza e integrità.. 
              Secondo Luigi Cavadini: “si distende lungo la riva del lago, esibendo immediatamente
-             l’idea alla base del progetto: legare, anche idealmente, gli atleti alle acque del Lario”.</p>
-          
-          <a href="sede.html"> scopri di più </a>
-          
-            <center> 
-        <p>Per contattare il Centro Rimiero, puoi compilare il seguente modulo:</p>
-        <form action="submit-form.php" method="POST">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+             l’idea alla base del progetto: legare, anche idealmente, gli atleti alle acque del Lario”...
+          </p>
+        
+          <button onclick="showText()">Mostra testo</button>
 
-          <p> <label for="message">Messaggio:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Invia</button> </p>
-         </center>
+  <div id="testo" style="display: none;">
+  <p>a Canottieri Lario è un gioiello dell’architettura razionalista,datata 1931.
+    Ora come allora è un edifico bianco, semplice , che trasmette immagine di forza e integrità..  
+    Secondo Luigi Cavadini: “si distende lungo la riva del lago, esibendo immediatamente l’idea alla base del progetto: 
+    legare, anche idealmente, gli atleti alle acque del Lario”.
+  </p>
+  <p>All’entrata nell’edificio si viene accolti in un vasto salone, decorato con dipinti 
+    di Arturo Songa ed  in tempi più recenti rricchito dall’innumerevole elenco di medaglie,
+     trofei, targhe, menzioni et similia. A sinistra dell’ingresso, l’invidiabile vasca voga 
+     che introduce poi nella doppia palestra, illuminata direttamente tramite vetrocemento dal Lario. 
+     Come aggiunta un locale sauna.
+    </p>
+  <p> fogo naturale di questi tre volumi si ha nell’esteso piazzale fronte lago, 
+    diviso equamente fra il trampolino in cemento armato (uno dei simboli futuristi della città!), 
+    le gradinate in pietra morbidamente discendenti nelle acque che tutt’ora ospitano imbarcazioni quali lucie e batell,  
+    e per finire il pontile di attracco semi galleggiante per l’andirivieni quotidiano degli atleti. 
+    Il resto dello spazio offre una gradita veranda lacustre, sfruttabile dai soci per le stagioni più belle.
+  </p>
+</div>
+
+  <script>
+function showText() {
+  var x = document.getElementById("testo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+ }
+ </script>
+  
+</main>
+
+<footer>
+ <h3> Contatti </h3>
+  <p> 
+   CentroReniero@gmail.com
+  </p>
+  <p>
+    Numero di telefono: 0494873932
+  </p>
+  <p>
+    Fax: 0341355388
+  </p>
+</footer>
 
   </body>
 </html>
