@@ -19,11 +19,15 @@ footer{
     margin: 10px;
   }
   
-  header {
+  #titolo{
+    
     background-color: #4db8ff;
     padding: 20px;
     text-align: center;
   }
+  
+   
+
   
   nav ul {
     list-style: none;
