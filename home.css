@@ -1,15 +1,44 @@
-#titolo{
-  background-color: #4db8ff;
+body{
+  font-family: Verdana, sans-serif;
+}
+
+header {
+  background-color: #7ff6fa; /*sfondo titolo + nav*/
+  color: #000000;
   padding: 20px;
   text-align: center;
 }
+
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #8de9ec ;  /*sfondo barra nav*/
   text-align: center;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #000000; /* colore testo nav */
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav ul ul li a {
+  background-color: #2fbbc0; /*  colore quadrati nav che quando passi sopra con il mause senza cambiiare colore*/
+  color: #000000;
+  display: block;
+  padding: 10px 20px;
 }
 
 nav li {
@@ -26,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #579397;  /*sfondo nav quando passi con il mouse*/
 }
 
 .dropdown-menu {
@@ -52,3 +81,20 @@ footer{
     flex: 1 0 200px;
     margin: 10px;
   }
+
+  .testo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 0 200px; 
+    margin: 10px;
+  }  
